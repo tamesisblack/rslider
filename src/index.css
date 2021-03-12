@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+root {
+  --bg: #0c0c0d;
+  --bg-secondary:#474747;
+  --text-color:#f7f7f7;
+  --border : 1px solid #9c9a9a;
+
+}
+
+ul{
+  list-style: none;
+  margin:0;
+}
+a{
+  color:var(--text-color);
+  text-align: center;
+  text-decoration: none;
+}
+.navbar{
+  height: 60px;
+  background-color: #000;
+  padding: 0 1rem;
+  border-bottom: 10px;
+}
+.navbar-nav{
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+
+}
+.nav-item{
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem ;
+}
+.nav-link{
+  padding: 5px 10px;
+  margin: 5px;
+  outline: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  background-color: coral;
+  transition: filter 300ms;
+  color: white;
+}
+.nav-link:hover{
+  filter :brightness(1.2);
+}
+.dropdown{
+  position: absolute;
+  top: 58px;
+  width: 100%;
+  background: violet;
+  border:2px #000 solid;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+.dropdown-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  padding: 0.4rem;
+  transition: background 0.3s;
+}
+.dropdown-item:hover{
+  background-color: #595757;
+
+}
+.support{
+  width: 250px;
+  height: 180px;
+
+}
+.support img {
+  width: 100%;
+  height: 100%;
+}
+.dropdown-item h4{
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.dropdown-item p{
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.dropdown-item ul li {
+  display: block;
+  padding: 10px 0px;
+  text-align: left;
+}
+.dropdown-item ul li a {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* .main-enter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-310px);
+}
+.main-enter-active {
+ width: 100%;
+ transform: translate(0%);
+ transition: all 300ms ease;
+
+}
+.main-exit {
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+.main-exit-active{
+ width: 100%;
+ transform: translateY(-350px);
+ z-index: -1;
+ transition: all 300ms ease;
+} */
